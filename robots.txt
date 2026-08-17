@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lesroisdela3d.dpdns.org/sitemap.xml
