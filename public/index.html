@@ -1814,6 +1814,31 @@
     }
 
     @media (max-width: 600px) {
+      .modal-overlay {
+        padding: 10px;
+      }
+
+      .modal-box {
+        padding: 58px 18px 24px;
+        border-radius: 24px;
+      }
+
+      .modal-close {
+        top: 12px;
+        right: 12px;
+        width: 44px;
+        height: 44px;
+      }
+
+      .cart-header {
+        padding: 18px;
+      }
+
+      .cart-close {
+        width: 46px;
+        height: 46px;
+      }
+
       .catalog-toolbar {
         margin-bottom: 20px;
         padding: 10px 10px 10px 13px;
@@ -2010,6 +2035,64 @@
     body.theme-dark .contact-form textarea {
       background: #232326;
       color: var(--text);
+    }
+
+    /* Correctifs mode sombre : boutons de fermeture et contrôles natifs. */
+    .modal-close,
+    .cart-close,
+    .qty-btn,
+    .cart-qty button,
+    .cart-clear,
+    .header-icon-button {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    body.theme-dark .modal-close,
+    body.theme-dark .cart-close,
+    body.theme-dark .qty-btn,
+    body.theme-dark .cart-qty button,
+    body.theme-dark .cart-clear {
+      border-color: #45454a;
+      background: #29292d;
+      color: #ffffff;
+    }
+
+    body.theme-dark .modal-close:hover,
+    body.theme-dark .cart-close:hover,
+    body.theme-dark .qty-btn:hover,
+    body.theme-dark .cart-qty button:hover:not(:disabled),
+    body.theme-dark .cart-clear:hover {
+      background: #38383d;
+      color: #ffffff;
+    }
+
+    body.theme-dark .order-summary,
+    body.theme-dark .order-form input,
+    body.theme-dark .order-form select,
+    body.theme-dark .quote-only,
+    body.theme-dark .cart-item,
+    body.theme-dark .cart-footer {
+      background: #18181a;
+      color: var(--text);
+    }
+
+    body.theme-dark .cart-item-image {
+      background: #242426;
+    }
+
+    body.theme-dark .order-form label {
+      color: var(--text-light);
+    }
+
+    /* Le × reste visible sur les navigateurs mobiles qui recolorent les boutons. */
+    .modal-close,
+    .cart-close {
+      display: inline-grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      font-weight: 900;
+      text-indent: 0;
     }
 
     .announcement-bar {
