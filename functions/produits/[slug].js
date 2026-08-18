@@ -95,7 +95,7 @@ function colorCodes(product) {
 
 function colorNames(product) {
   return String(product.couleurs || "")
-    .split("/")
+    .split(/[,/;]+/)
     .map((value) => value.trim())
     .filter(Boolean);
 }
@@ -302,7 +302,7 @@ export async function onRequestGet(context) {
     .brand b{color:var(--accent)}
     .nav{display:flex;gap:22px;color:var(--muted);font-size:10px;font-weight:850;text-transform:uppercase}
     .actions{display:flex;align-items:center;gap:8px}
-    .icon,.cart{display:inline-flex;min-height:44px;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
+    .icon,.cart{display:inline-flex;min-height:44px;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);-webkit-appearance:none;appearance:none}
     .icon{width:44px}.cart{gap:7px;padding:0 15px;background:#111;color:#fff;border-color:#111;font-size:10px;font-weight:900;text-transform:uppercase}
     .badge{display:inline-flex;min-width:22px;height:22px;align-items:center;justify-content:center;padding:0 6px;border-radius:999px;background:var(--accent);font-size:9px}
     .wrap{width:min(calc(100% - 30px),1180px);margin:0 auto;padding:55px 0 90px}
@@ -323,7 +323,7 @@ export async function onRequestGet(context) {
     .details{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:24px}.detail{padding:13px;border-radius:14px;background:var(--surface2)}.detail span{display:block;color:var(--muted);font-size:8px;font-weight:900;text-transform:uppercase}.detail strong{display:block;margin-top:4px;font-size:11px}
     .toast{position:fixed;right:18px;bottom:18px;z-index:100;transform:translateY(12px);opacity:0;padding:13px 16px;border-radius:14px;background:#111;color:#fff;font-size:11px;font-weight:800;transition:.22s}.toast.show{transform:none;opacity:1}
     @media(max-width:900px){.nav{display:none}.product{grid-template-columns:1fr}.info{position:static}}
-    @media(max-width:560px){.announcement span:nth-child(2){display:none}.brand-name{display:none}.wrap{padding-top:38px}.info{padding:22px}.buy-row{grid-template-columns:90px 1fr}.details{grid-template-columns:1fr}.cart{padding:0 10px}}
+    @media(max-width:560px){.announcement span:nth-child(2){display:none}.brand-name{display:none}.header{width:calc(100% - 18px);top:8px;margin-top:8px;padding:9px;gap:8px}.brand-mark{width:42px;height:42px}.actions{gap:6px}.icon{width:42px;min-height:42px}.cart{min-height:42px;padding:0 9px}.wrap{width:calc(100% - 20px);padding-top:30px}.info{padding:20px;border-radius:22px}.main-image{border-radius:22px}.buy-row{grid-template-columns:84px 1fr}.details{grid-template-columns:1fr}.thumb{width:66px;height:66px}}
   </style>
 </head>
 <body>
