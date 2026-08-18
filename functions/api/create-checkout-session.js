@@ -1,7 +1,7 @@
 const DEFAULT_PRODUCTS_JSON_URL =
   "https://opensheet.elk.sh/1KHd21NIpAbtMcEUI9NtQ3rvp4pgbZ4xJmQn2-eEI7Ss/1";
 
-const DEFAULT_SHIPPING_CENTS = 600;
+const DEFAULT_SHIPPING_CENTS = 499;
 const MAX_CART_LINES = 30;
 const MAX_QUANTITY = 99;
 
