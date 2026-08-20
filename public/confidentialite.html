@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Politique de confidentialité — Les Rois de la 3D</title>
+  <meta name="description" content="Politique de confidentialité du site Les Rois de la 3D : comptes clients, commandes, paiements, formulaire de contact et intégration eBay.">
+  <meta name="theme-color" content="#ff6b35">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://lesroisdela3d.dpdns.org/confidentialite.html">
+  <style>
+    :root{
+      --bg:#f4f1ec;--surface:#fff;--soft:#faf8f5;--text:#171717;
+      --muted:#716d67;--border:#ded9d2;--accent:#ff6b35;--accent-dark:#df4e1c;
+      --shadow:0 22px 70px rgba(0,0,0,.08)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;min-height:100vh;
+      background:
+        radial-gradient(circle at 8% 0,rgba(255,107,53,.13),transparent 28%),
+        var(--bg);
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.7
+    }
+    body.dark{
+      --bg:#0f0f10;--surface:#18181a;--soft:#232326;--text:#f5f3ef;
+      --muted:#aaa7a2;--border:#36363a;--shadow:0 25px 80px rgba(0,0,0,.36)
+    }
+    a{color:inherit}
+    .top{
+      min-height:38px;display:flex;align-items:center;justify-content:center;
+      padding:8px 14px;background:#111;color:#fff;text-align:center;
+      font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase
+    }
+    .header{
+      position:sticky;top:12px;z-index:10;
+      width:min(calc(100% - 24px),1050px);min-height:72px;
+      margin:12px auto 0;padding:11px 14px;
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+      border:1px solid var(--border);border-radius:22px;
+      background:color-mix(in srgb,var(--surface) 93%,transparent);
+      backdrop-filter:blur(18px);box-shadow:0 12px 45px rgba(0,0,0,.07)
+    }
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:13px;font-weight:950;text-transform:uppercase}
+    .brand-mark{
+      display:grid;width:46px;height:46px;place-items:center;border:1px solid rgba(255,107,53,.35);
+      border-radius:13px;background:var(--surface);color:var(--accent);font-size:12px;font-weight:950
+    }
+    .brand b{color:var(--accent)}
+    .actions{display:flex;align-items:center;gap:8px}
+    .btn{
+      min-height:42px;display:inline-flex;align-items:center;justify-content:center;
+      padding:0 14px;border:1px solid var(--border);border-radius:13px;
+      background:var(--surface);color:var(--text);text-decoration:none;
+      font:inherit;font-size:10px;font-weight:900;text-transform:uppercase;cursor:pointer
+    }
+    .btn.primary{background:#111;color:#fff;border-color:#111}
+    main{width:min(calc(100% - 28px),900px);margin:0 auto;padding:64px 0 80px}
+    .eyebrow{margin:0 0 10px;color:var(--accent);font-size:10px;font-weight:950;letter-spacing:.1em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(42px,7vw,74px);line-height:.98;letter-spacing:-.055em}
+    .lead{max-width:760px;margin:22px 0 12px;color:var(--muted);font-size:16px}
+    .updated{margin:0 0 34px;color:var(--muted);font-size:11px}
+    .card{
+      margin:14px 0;padding:26px;border:1px solid var(--border);
+      border-radius:24px;background:var(--surface);box-shadow:var(--shadow)
+    }
+    h2{margin:0 0 10px;font-size:25px;letter-spacing:-.035em}
+    h3{margin:20px 0 8px;font-size:16px}
+    p{margin:10px 0;color:var(--muted)}
+    ul{margin:10px 0 0;padding-left:22px;color:var(--muted)}
+    li{margin:7px 0}
+    strong{color:var(--text)}
+    .notice{
+      margin-top:18px;padding:16px 18px;border-left:4px solid var(--accent);
+      border-radius:14px;background:rgba(255,107,53,.08);color:var(--muted)
+    }
+    .footer{
+      width:min(calc(100% - 28px),900px);margin:0 auto 28px;padding:22px 0;
+      border-top:1px solid var(--border);color:var(--muted);font-size:11px;
+      display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap
+    }
+    .footer a{font-weight:850}
+    @media(max-width:620px){
+      .header{top:7px;width:calc(100% - 14px);margin-top:7px;padding:8px}
+      .brand-name{display:none}.brand-mark{width:42px;height:42px}
+      .btn{padding:0 11px}.btn.primary{display:none}
+      main{width:calc(100% - 20px);padding:42px 0 60px}
+      .card{padding:20px;border-radius:20px}
+      h1{font-size:44px}
+    }
+  </style>
+</head>
+<body>
+  <div class="top">Protection des données • Les Rois de la 3D</div>
+
+  <header class="header">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">LR3D</span>
+      <span class="brand-name">Les Rois de la <b>3D</b></span>
+    </a>
+    <div class="actions">
+      <button class="btn" id="themeToggle" type="button" aria-label="Changer le thème">◐</button>
+      <a class="btn primary" href="/#contact">Nous contacter</a>
+    </div>
+  </header>
+
+  <main>
+    <p class="eyebrow">Politique de confidentialité</p>
+    <h1>Vos données,<br>traitées avec soin.</h1>
+    <p class="lead">
+      Cette politique explique quelles données peuvent être traitées lorsque vous utilisez
+      le site Les Rois de la 3D, créez un compte, passez une commande, nous contactez ou
+      utilisez une fonctionnalité liée à eBay.
+    </p>
+    <p class="updated">Dernière mise à jour : 20 août 2026.</p>
+
+    <section class="card">
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        Le site <strong>Les Rois de la 3D</strong> est exploité par
+        <strong>Paul Bouden et Frédéric Bouteaux</strong>, activité située à
+        <strong>Reims, Grand Est, France</strong>.
+      </p>
+      <p>
+        Pour toute question relative à vos données personnelles, vous pouvez utiliser
+        le <a href="/#contact"><strong>formulaire de contact du site</strong></a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Données pouvant être traitées</h2>
+
+      <h3>Compte client</h3>
+      <p>
+        Lorsque vous créez un compte, votre adresse e-mail et les informations nécessaires
+        à l'authentification sont traitées via Supabase. Les mots de passe ne sont pas
+        affichés ni conservés en clair par Les Rois de la 3D.
+      </p>
+
+      <h3>Commandes et paiement</h3>
+      <p>
+        Pour traiter une commande, nous pouvons traiter votre adresse e-mail, le contenu
+        de votre commande, les montants, le statut de paiement et le suivi de la commande.
+        Lors du paiement, Stripe peut collecter notamment l'adresse de facturation,
+        l'adresse de livraison et le numéro de téléphone.
+      </p>
+      <p>
+        Les données complètes de carte bancaire sont traitées par Stripe et ne sont pas
+        stockées directement par Les Rois de la 3D.
+      </p>
+
+      <h3>Formulaire de contact</h3>
+      <p>
+        Si vous nous contactez, nous recevons les informations que vous fournissez,
+        par exemple votre nom, votre adresse e-mail, votre message et, le cas échéant,
+        un lien vers un fichier 3D. Le formulaire est transmis via Web3Forms.
+      </p>
+
+      <h3>Données enregistrées dans votre navigateur</h3>
+      <p>
+        Le site utilise le stockage local du navigateur pour des fonctions pratiques :
+        panier, favoris, produits récemment consultés, comparaison, préférences
+        d'affichage et choix du thème. Vous pouvez supprimer ces données depuis les
+        réglages de votre navigateur.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>3. Finalités</h2>
+      <ul>
+        <li>créer et sécuriser votre compte client ;</li>
+        <li>préparer, encaisser et suivre vos commandes ;</li>
+        <li>répondre à vos demandes et projets sur mesure ;</li>
+        <li>assurer le fonctionnement, la sécurité et la maintenance du site ;</li>
+        <li>mémoriser localement vos préférences de navigation ;</li>
+        <li>lorsque l'intégration eBay est utilisée, synchroniser les informations nécessaires entre notre inventaire et eBay.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Intégration eBay</h2>
+      <p>
+        Lorsque la connexion eBay est activée, l'application peut accéder uniquement aux
+        données autorisées par le compte eBay connecté et nécessaires à la synchronisation,
+        par exemple l'inventaire, les offres et les informations de commande utiles au
+        suivi des ventes.
+      </p>
+      <p>
+        Ces données ne sont pas vendues. Elles sont utilisées pour fournir la
+        synchronisation demandée et pour maintenir les stocks et commandes cohérents.
+      </p>
+      <p>
+        Les Rois de la 3D dispose également d'un mécanisme destiné à recevoir les
+        notifications eBay relatives à la suppression ou fermeture d'un compte, afin de
+        traiter les données concernées lorsque cela est applicable.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Prestataires techniques</h2>
+      <p>
+        Selon la fonctionnalité utilisée, certaines données peuvent être traitées par des
+        prestataires nécessaires au fonctionnement du service, notamment :
+      </p>
+      <ul>
+        <li><strong>Cloudflare</strong> pour l'hébergement, la diffusion et la sécurité du site ;</li>
+        <li><strong>Supabase</strong> pour l'authentification et les données de compte/commande ;</li>
+        <li><strong>Stripe</strong> pour le paiement sécurisé ;</li>
+        <li><strong>Web3Forms</strong> pour la transmission du formulaire de contact ;</li>
+        <li><strong>eBay</strong> lorsque la synchronisation eBay est utilisée.</li>
+      </ul>
+      <p>
+        Le catalogue produits utilise Google Sheets/OpenSheet. Cette source sert au
+        catalogue et n'a pas vocation à stocker les données personnelles des clients.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. Durée de conservation</h2>
+      <p>
+        Les données sont conservées uniquement pendant la durée nécessaire aux finalités
+        décrites ci-dessus, puis supprimées ou archivées lorsque la loi impose une
+        conservation particulière, notamment pour les informations liées aux transactions.
+      </p>
+      <p>
+        Les données enregistrées localement dans votre navigateur restent présentes
+        jusqu'à leur suppression par vous ou par le navigateur.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Vos droits</h2>
+      <p>
+        Selon la réglementation applicable, notamment le RGPD, vous pouvez demander
+        l'accès, la rectification, l'effacement, la limitation ou la portabilité de vos
+        données, et vous opposer à certains traitements lorsqu'un tel droit s'applique.
+      </p>
+      <p>
+        Pour exercer vos droits, utilisez le <a href="/#contact"><strong>formulaire de contact</strong></a>
+        en précisant votre demande. Une vérification d'identité peut être demandée si elle
+        est nécessaire pour protéger votre compte.
+      </p>
+      <p>
+        Vous pouvez également introduire une réclamation auprès de l'autorité de contrôle
+        compétente, notamment la CNIL en France.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Transferts et sécurité</h2>
+      <p>
+        Certains prestataires peuvent traiter des données depuis différents pays. Lorsque
+        cela est nécessaire, ces traitements sont encadrés par les mécanismes de protection
+        prévus par les prestataires et la réglementation applicable.
+      </p>
+      <p>
+        Nous mettons en place des mesures raisonnables pour limiter l'accès aux données,
+        protéger les secrets techniques et utiliser des connexions HTTPS.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Modifications de cette politique</h2>
+      <p>
+        Cette politique peut évoluer en fonction des services utilisés ou de la
+        réglementation. La date de dernière mise à jour affichée en haut de cette page
+        permet d'identifier la version en vigueur.
+      </p>
+
+      <div class="notice">
+        URL officielle de cette politique :
+        <strong>https://lesroisdela3d.dpdns.org/confidentialite.html</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Les Rois de la 3D — Paul Bouden &amp; Frédéric Bouteaux.</span>
+    <span><a href="/">Accueil</a> · <a href="/#contact">Contact</a></span>
+  </footer>
+
+  <script>
+    const THEME_KEY = "lesroisdela3d_theme_mode_v2";
+    const toggle = document.getElementById("themeToggle");
+    const systemTheme = matchMedia("(prefers-color-scheme: dark)");
+    let theme = localStorage.getItem(THEME_KEY) || "auto";
+
+    function paintTheme(){
+      const dark = theme === "dark" || (theme === "auto" && systemTheme.matches);
+      document.body.classList.toggle("dark", dark);
+      document.documentElement.style.colorScheme = dark ? "dark" : "light";
+      toggle.textContent = theme === "auto" ? "◐" : dark ? "☾" : "☀";
+    }
+
+    toggle.addEventListener("click", function(){
+      theme = theme === "auto" ? "light" : theme === "light" ? "dark" : "auto";
+      localStorage.setItem(THEME_KEY, theme);
+      paintTheme();
+    });
+
+    systemTheme.addEventListener("change", function(){
+      if(theme === "auto") paintTheme();
+    });
+
+    paintTheme();
+  </script>
+</body>
+</html>

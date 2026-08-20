@@ -76,6 +76,12 @@
     @media(max-width:850px){.nav{display:none}.auth-grid{grid-template-columns:1fr}.hero{display:grid}.order-body{grid-template-columns:1fr}.progress{overflow-x:auto;grid-template-columns:repeat(6,90px)}}
     @media(max-width:560px){.brand span{display:none}.shop-btn{padding:0 10px}.wrap{padding-top:45px}.panel{padding:21px}.account-head{display:grid}.order-top{display:grid}}
   
+    .privacy-footer{
+      width:min(calc(100% - 30px),1180px);margin:0 auto 28px;padding:20px 0;
+      border-top:1px solid var(--border);color:var(--muted);font-size:10px;text-align:center
+    }
+    .privacy-footer a{font-weight:900;text-decoration:underline}
+
     .account-brand-mark{
       display:grid;width:48px;height:48px;place-items:center;
       border:1px solid var(--border);border-radius:12px;
@@ -210,6 +216,10 @@
       <div class="orders" id="orders"></div>
     </section>
   </main>
+
+  <footer class="privacy-footer">
+    <a href="/confidentialite.html">Politique de confidentialité</a>
+  </footer>
 
   <script type="module">
     import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
