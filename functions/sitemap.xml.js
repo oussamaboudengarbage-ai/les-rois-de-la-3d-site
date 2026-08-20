@@ -48,6 +48,7 @@ export async function onRequestGet(context) {
 
     const urls = [
       siteUrl + "/",
+      siteUrl + "/confidentialite.html",
       ...((Array.isArray(products) ? products : [])
         .filter((product) => product && product.nom)
         .map(
